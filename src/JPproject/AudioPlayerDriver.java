@@ -8,7 +8,7 @@ package JPproject;
 public class AudioPlayerDriver {
 
   public static void main(String[] args) {
-    AudioPlayer mp3 = new AudioPlayer("MP3", "Plays great music");
+    AudioPlayer mp3 = new AudioPlayer("iPod", "MP3");
     System.out.println(mp3.toString());
   }
 }
