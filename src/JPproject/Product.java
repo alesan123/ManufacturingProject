@@ -9,7 +9,7 @@ package JPproject;
 
 import java.util.Date;
 
-public class Product implements Item {
+public class Product implements Item , Comparable<Product>{
 
   int serialNumber;
   String manufacturer;
@@ -59,5 +59,9 @@ public class Product implements Item {
             "Date          : " + manufacturedOn + "\n" +
             "Device Name   : " + name + "\n";
   }
-
+//Compares Products by name
+  @Override
+  public int compareTo(Product o) {
+    return name.compareTo(o.name);
+  }
 }
