@@ -8,7 +8,7 @@ public class MultimediaControlDriver {
 
   public static void main(String[] args) {
     MoviePlayer one = new MoviePlayer("DVD", new Screen("1920 x 1080", 60,
-        1));
+        1),MonitorType.LCD);
     AudioPlayer two = new AudioPlayer("MP3", "Play music");
     one.play();
     two.play();

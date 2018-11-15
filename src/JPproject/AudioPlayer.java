@@ -40,7 +40,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
-  //toString function that adds Audio and Type
+  //toString function that adds Audio and Type to product
   public String toString() {
     return
         super.toString() +

@@ -17,6 +17,7 @@ public class Product implements Item , Comparable<Product>{
   String name;
   static int currentProductionNumber = 1;
 
+  //Constructor
   public Product(String name) {
     this.name = name;
     manufacturer = Item.manufacturer;
@@ -59,7 +60,9 @@ public class Product implements Item , Comparable<Product>{
             "Date          : " + manufacturedOn + "\n" +
             "Device Name   : " + name + "\n";
   }
-//Compares Products by name
+
+
+//Compares Products by Name
   @Override
   public int compareTo(Product o) {
     return name.compareTo(o.name);
