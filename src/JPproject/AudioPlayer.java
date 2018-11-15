@@ -19,7 +19,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
     mediaType = ItemType.Audio;
   }
 
-  //Multimedial Controls used to display controls
+  //Multimedia Controls used to display controls
   @Override
   public void play() {
     System.out.println("Playing");
@@ -45,6 +45,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
     return
         super.toString() +
             "Audio Spec    : " + audioSpecifications + "\n" +
-            "Type          : " + mediaType;
+            "Type          : " + mediaType +"\n";
   }
 }

@@ -1,7 +1,7 @@
 //Alejandro Sanchez Padron
 //11/07/2018
 /* Class implements MultiMedia control and extends product to describe a movie player
-*/
+ */
 package JPproject;
 
 public class MoviePlayer extends Product implements MultimediaControl {
@@ -36,9 +36,9 @@ public class MoviePlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
-  public String toString(){
+  public String toString() {
     return super.toString() +
-        screen.toString()+"\n"+
-        "Monitor       : "+ monitorType.toString()+"\n";
+        screen.toString() + "\n" +
+        "Monitor       : " + monitorType.toString() + "\n";
   }
 }
