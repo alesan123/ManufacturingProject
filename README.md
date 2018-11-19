@@ -1,3 +1,8 @@
 # ManufacturingProject
 
-I have created a Java program that creates and records production line items. I will also create a fleixible structure that could be used in any production line. The structure will allow for easy modification to handle different products.
+This is a structure for a production line. It allows manufactures to record production line items by assigning them values such as a name
+and date of creation and product serial number. The serial number is automatically incremented everytime a product is creating. giving
+each product a unique serial number.
+
+#Author
+Alejandro Sanchez
