@@ -60,7 +60,6 @@ public class Product implements Item, Comparable<Product> {
             "Name          : " + name + "\n";
   }
 
-
   //Compares Products by Name
   @Override
   public int compareTo(Product o) {
