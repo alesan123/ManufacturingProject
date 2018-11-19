@@ -16,7 +16,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   public AudioPlayer(String name, String audioSpecifications) {
     super(name);
     this.audioSpecifications = audioSpecifications;
-    mediaType = ItemType.Audio;
+    mediaType = ItemType.AUDIO;
   }
 
   //Multimedia Controls used to display controls

@@ -27,7 +27,6 @@ public interface Item {
   // A method getManufactureDate that would return a Date
   Date getManufactureDate();
 
-
   // A method getSerialNumber that would return an int
   int getSerialNumber();
 }

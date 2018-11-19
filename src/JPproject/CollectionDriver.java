@@ -2,9 +2,6 @@
 //11/14/2018
 /* Driver class demonstrating the use of a collection to sort products */
 
-
-
-
 package JPproject;
 
 import java.util.ArrayList;
@@ -16,10 +13,9 @@ public abstract class CollectionDriver {
 
   public static void main(String[] args) {
 
-
     ArrayList<Product> products = new ArrayList<>();
-    AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
-    AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
