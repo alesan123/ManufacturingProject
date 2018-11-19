@@ -51,7 +51,7 @@ public class Product implements Item, Comparable<Product> {
     return serialNumber;
   }
 
-  //This method returns the data as a string
+  //toString method returns the data as a string
   public String toString() {
     return
         "Manufacturer  : " + manufacturer + "\n" +
@@ -60,7 +60,7 @@ public class Product implements Item, Comparable<Product> {
             "Name          : " + name + "\n";
   }
 
-  //Compares Products by Name
+  //Compares method that compares Products by Name
   @Override
   public int compareTo(Product o) {
     return name.compareTo(o.name);

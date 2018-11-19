@@ -29,16 +29,18 @@ public class EmployeeInfo {
 
   private void createEmployeeCode(StringBuilder name) {
     StringBuilder guest = new StringBuilder("Guest");
+
     String firstName;
     String surName;
 
-    if (name == guest) {
+    if (guest.toString().equals(name.toString())) {
       code = "Guest";
 
     } else {
+
       int index = name.indexOf(String.valueOf(' '));
-      firstName = name.substring(0,index);
-      surName = name.substring(index, name.length());
+      firstName = name.substring(0,index+1);
+      surName = name.substring(index+1, name.length());
 
       code = firstName.charAt(0) + surName;
     }
