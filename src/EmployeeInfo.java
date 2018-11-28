@@ -1,5 +1,3 @@
-package JPproject;
-
 import java.util.Scanner;
 
 public class EmployeeInfo {
@@ -39,8 +37,8 @@ public class EmployeeInfo {
     } else {
 
       int index = name.indexOf(String.valueOf(' '));
-      firstName = name.substring(0,index+1);
-      surName = name.substring(index+1, name.length());
+      firstName = name.substring(0, index + 1);
+      surName = name.substring(index + 1, name.length());
 
       code = firstName.charAt(0) + surName;
     }
@@ -55,23 +53,17 @@ public class EmployeeInfo {
 
   private boolean checkName(StringBuilder name) {
     boolean hasSpace = false;
-    if (name.toString().contains(" ")){
+    if (name.toString().contains(" ")) {
       hasSpace = true;
     }
     return hasSpace;
   }
 
 
-
-
   public static void main(String[] args) {
-EmployeeInfo emplOne = new EmployeeInfo();
+    EmployeeInfo emplOne = new EmployeeInfo();
 
   }
-
-
-
-
 
 
 }

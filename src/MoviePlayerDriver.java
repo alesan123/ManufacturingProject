@@ -2,7 +2,6 @@
 //11/07/2018
 /* Class used to create instances of type MoviePLayer
  */
-package JPproject;
 
 public class MoviePlayerDriver {
 
