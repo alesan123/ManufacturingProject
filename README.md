@@ -10,7 +10,7 @@ each product has a unique serial number.
 ## Installation
 ### Cloning Repository 
   1. Copy URL link
-  2. Inside IDE ( File -> new -> Project from version control -> git )
+  2. Inside IDE ( File -> New -> Project from version control -> git )
   3. Paste the link 
 ## Built with
 IntelliJ IDEA
