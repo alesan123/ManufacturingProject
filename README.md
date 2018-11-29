@@ -2,6 +2,8 @@
 ## Description
 This is a structure for a production line. It allows manufactures to record production line items by assigning them values such as a name, date of creation, and product serial number. The serial number is automatically incremented everytime a product is created, thus ensuring
 each product has a unique serial number.
+## Class Diagram
+![Project Class Diagram](https://i.imgur.com/xOemkHu.png)
 ## Requirements
 * Java JDK 8 or higher
 * Integrated development environment (IDE)
