@@ -3,12 +3,16 @@ import java.util.Collection;
 import java.util.Collections;
 
 /**
+ * Driver class demonstrating the use of a collection to sort products.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/14/2018
- * @description : Driver class demonstrating the use of a collection to sort products
  */
 public abstract class CollectionDriver {
 
+  /**
+   * Creates collection of products and sorts them.
+   */
   public static void main(String[] args) {
     // Creates and initialzies ArrayList of type Product
     ArrayList<Product> products = new ArrayList<>();
@@ -36,7 +40,7 @@ public abstract class CollectionDriver {
   }
 
   /**
-   * Prints every object in the collection
+   * Prints every object in the collection.
    *
    * @param c Collection created in main method
    */

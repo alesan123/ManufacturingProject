@@ -1,8 +1,9 @@
-//Alejandro Sanchez Padron
-//11/07/2018
-/* Class used to create instances of type AudioPlayer
+/**
+ * Class used to create and tests AudioPlayer objects.
+ *
+ * @author : Alejandro Sanchez Padron
+ * @date : 11/07/2018
  */
-
 public class AudioPlayerDriver {
 
   public static void main(String[] args) {

@@ -1,10 +1,14 @@
-//Alejandro Sanchez Padron
-//11/07/2018
-/* Driver class used to test Multimedia Controls
+/**
+ * Driver class used to test Multimedia Controls.
+ *
+ * @author : Alejandro Sanchez Padron
+ * @date : 11/07/2018
  */
-
 public class MultimediaControlDriver {
 
+  /**
+   * Main method.
+   */
   public static void main(String[] args) {
     MoviePlayer one = new MoviePlayer("DVD", new Screen("1920 x 1080", 60,
         1), MonitorType.LCD);

@@ -1,22 +1,22 @@
 /**
+ * Class implements MultiMedia control and extends product to describe a movie player.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/07/2018
- * @description : Class implements MultiMedia control and extends product to describe a movie
- * player
  */
 public class MoviePlayer extends Product implements MultimediaControl {
 
   /**
-   * Screen store information of screen
+   * Screen store information of screen.
    */
   private Screen screen;
   /**
-   * Describes monitor type
+   * Describes monitor type.
    */
   private MonitorType monitorType;
 
   /**
-   * Creates MoviePlayer object, calls Products constructor
+   * Creates MoviePlayer object, calls Products constructor.
    *
    * @param name the name of the product
    * @param screen the screen information
@@ -31,7 +31,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   //Multimedia Controls used to display controls
 
   /**
-   * Multimedia Controls used to display controls of MoviePlayer
+   * Multimedia Controls used to display controls of MoviePlayer.
    */
   @Override
   public void play() {
@@ -54,13 +54,13 @@ public class MoviePlayer extends Product implements MultimediaControl {
   }
 
   /**
-   * toString function that adds screen information and monitor type to Products
+   * toString function that adds screen information and monitor type to Products.
    *
    * @return String
    */
   public String toString() {
-    return super.toString() +
-        screen.toString() + "\n" +
-        "Monitor       : " + monitorType.toString() + "\n";
+    return super.toString()
+        + screen.toString() + "\n"
+        + "Monitor       : " + monitorType.toString() + "\n";
   }
 }

@@ -1,27 +1,27 @@
 /**
+ * Class Screen that describes a screen item and implements ScreenSpec line should have.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/07/2018
- * @description : Class Screen that describes a screen item and implements ScreenSpec line should
- * have.
  */
 
 public class Screen implements ScreenSpec {
 
   /**
-   * Resolution of the Screen
+   * Resolution of the Screen.
    */
   String resolution;
   /**
-   * Refresh rate of the Screen
+   * Refresh rate of the Screen.
    */
   int refreshRate;
   /**
-   * Response time of the Screen
+   * Response time of the Screen.
    */
   int responseTime;
 
   /**
-   * Constructor that create objects of type Screen
+   * Constructor that create objects of type Screen.
    *
    * @param resolution resolution of Screen
    * @param refreshRate refresh rate of Screen
@@ -34,6 +34,8 @@ public class Screen implements ScreenSpec {
   }
 
   /**
+   * Return resolution.
+   *
    * @return resolution
    */
   @Override
@@ -42,6 +44,8 @@ public class Screen implements ScreenSpec {
   }
 
   /**
+   * Return refresh arte.
+   *
    * @return refresh rate
    */
   @Override
@@ -50,6 +54,8 @@ public class Screen implements ScreenSpec {
   }
 
   /**
+   * Return response time.
+   *
    * @return response time
    */
   @Override
@@ -58,13 +64,13 @@ public class Screen implements ScreenSpec {
   }
 
   /**
-   * toString method that uses variables and converts returns a String
+   * toString method that uses variables and converts returns a String.
    *
    * @return String
    */
   public String toString() {
-    return "Resolution    : " + resolution + "\n" +
-        "Refresh Rate  : " + refreshRate + "\n" +
-        "Response Time : " + responseTime;
+    return "Resolution    : " + resolution + "\n"
+        + "Refresh Rate  : " + refreshRate + "\n"
+        + "Response Time : " + responseTime;
   }
 }

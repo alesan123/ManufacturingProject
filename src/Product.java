@@ -1,42 +1,43 @@
 import java.util.Date;
 
 /**
+ * Product will implement all the basic functionality that all items on a production line should
+ * have.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/07/2018
- * @description : Product will implement all the basic functionality that all items on a production
- * line should have.
  */
 
 public class Product implements Item, Comparable<Product> {
 
   /**
-   * serialNumber for product
+   * serialNumber for product.
    */
   int serialNumber;
 
   /**
-   * name of manufacturer
+   * name of manufacturer.
    */
   String manufacturer;
 
   /**
-   * date that the product is manufactured on
+   * date that the product is manufactured on.
    */
   Date manufacturedOn;
 
   /**
-   * name of product
+   * name of product.
    */
   String name;
 
   /**
-   * used to track current number in the production line, also used to set the serialNumber
+   * used to track current number in the production line, also used to set the serialNumber.
    */
   static int currentProductionNumber = 1;
 
   /**
    * Constructor will create object of type Product, will assign serialNumber to
-   * currentProductionNumber and sets the current date as the date manufactured
+   * currentProductionNumber and sets the current date as the date manufactured.
    *
    * @param name the name of the product
    */
@@ -49,7 +50,7 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * Sets the Products production number
+   * Sets the Products production number.
    *
    * @param number Products production number
    */
@@ -59,7 +60,7 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * Sets the name of Product
+   * Sets the name of Product.
    *
    * @param name name of Product
    */
@@ -69,6 +70,8 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
+   * Return name of product.
+   *
    * @return the name of Product
    */
   @Override
@@ -77,6 +80,8 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
+   * Return date.
+   *
    * @return the date of Product
    */
   @Override
@@ -85,6 +90,8 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
+   * Return serial number.
+   *
    * @return the serial number of Product
    */
   @Override
@@ -93,20 +100,20 @@ public class Product implements Item, Comparable<Product> {
   }
 
   /**
-   * toString function
+   * toString function.
    *
    * @return the data of Product
    */
   public String toString() {
     return
-        "Manufacturer  : " + manufacturer + "\n" +
-            "Serial Number : " + serialNumber + "\n" +
-            "Date          : " + manufacturedOn + "\n" +
-            "Name          : " + name + "\n";
+        "Manufacturer  : " + manufacturer + "\n"
+            + "Serial Number : " + serialNumber + "\n"
+            + "Date          : " + manufacturedOn + "\n"
+            + "Name          : " + name + "\n";
   }
 
   /**
-   * Compare method that compares Products by name
+   * Compare method that compares Products by name.
    */
   @Override
   public int compareTo(Product o) {

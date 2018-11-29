@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * Class is used to create Employee account and username.
+ *
+ * @author : Alejandro Sanchez Padron
+ * @date : 11/07/2018
+ */
 public class EmployeeInfo {
 
   StringBuilder name;
   String code;
-
-  //public StringBuilder getName();
-
-  //public String getCode();
-
 
   public EmployeeInfo() {
     setName();

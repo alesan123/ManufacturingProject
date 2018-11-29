@@ -1,23 +1,24 @@
 /**
+ * This class will be used to create a product Audio Player, it will implement Multimedia Controls
+ * and is a subclass of product.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/17/2018
- * @description : This class will be used to create a product Audio Player, it will implement
- * Multimedia Controls and is a subclass of product.
  */
 public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
-   * audioSpecification will describe the specification of product
+   * audioSpecification will describe the specification of product.
    */
   private String audioSpecifications;
   /**
-   * mediaType will describe the type of product
+   * mediaType will describe the type of product.
    */
   private ItemType mediaType;
 
   /**
    * Constructor creates Audio Player object by extending Product constructor, and assigns ItemType
-   * to AUDIO
+   * to AUDIO.
    *
    * @param name the name of the audioPlayer
    * @param audioSpecifications a brief specification of the audioPlayer
@@ -29,7 +30,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
   /**
-   * Multimedia controls to display controls of AudioPlayer
+   * Multimedia controls to display controls of AudioPlayer.
    */
   @Override
   public void play() {
@@ -52,15 +53,15 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
   /**
-   * toString function that adds Audio spec and Type description to Products
+   * toString function that adds Audio spec and Type description to Products.
    *
    * @return String
    */
   public String toString() {
     return
         //calls Products toString function
-        super.toString() +
-            "Audio Spec    : " + audioSpecifications + "\n" +
-            "Type          : " + mediaType + "\n";
+        super.toString()
+            + "Audio Spec    : " + audioSpecifications + "\n"
+            + "Type          : " + mediaType + "\n";
   }
 }

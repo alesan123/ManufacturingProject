@@ -1,7 +1,8 @@
 /**
+ * Enumerator creates preset types for all instanced items.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 11/07/2018
- * @description : Enumerator creates preset types for all instanced items
  */
 public enum ItemType {
 
@@ -10,7 +11,7 @@ public enum ItemType {
   public final String code;
 
   /**
-   * Creates the item type
+   * Creates the item type.
    */
   ItemType(String code) {
     this.code = code;

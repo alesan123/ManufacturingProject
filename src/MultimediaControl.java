@@ -1,8 +1,9 @@
 
 /**
+ * Interface will create functions that al the items in producton line will have.
+ *
  * @author : Alejandro Sanchez Padron
  * @date : 9/25/2018
- * @description : Interface will create functions that al the items in producton line will have
  */
 public interface MultimediaControl {
 
