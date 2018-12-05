@@ -10,14 +10,10 @@ public class EmployeeInfo {
 
   private StringBuilder name;
   private String code;
-
   private String deptId;
   private Scanner in;
-  
-  
-  
-  
-  
+
+
   public EmployeeInfo() {
     setName();
   }
@@ -28,33 +24,36 @@ public class EmployeeInfo {
     if (checkName(name)) {
       createEmployeeCode(name);
     } else {
-      createEmployeeCode(new StringBuilder("Guest"));
+      createEmployeeCode(new StringBuilder("guest"));
     }
   }
 
   private void createEmployeeCode(StringBuilder name) {
-    StringBuilder guest = new StringBuilder("Guest");
+    //Create StringBuilder object to compare with name to see if
+    //it is guest
+    StringBuilder guest = new StringBuilder("guest");
 
     String firstName;
     String surName;
 
     if (guest.toString().equals(name.toString())) {
-      code = "Guest";
+      code = "guest";
 
     } else {
 
-      int index = name.indexOf(String.valueOf(' '));
-      firstName = name.substring(0, index + 1);
-      surName = name.substring(index + 1, name.length());
+      int spaceInName = name.indexOf(String.valueOf(' '));
+
+      firstName = name.substring(0, spaceInName + 1);
+      surName = name.substring(spaceInName + 1, name.length());
 
       code = firstName.charAt(0) + surName;
     }
   }
 
   private String inputName() {
-    Scanner userInput = new Scanner(System.in);
-    System.out.println("Please Enter Full Name :");
-    String name = userInput.nextLine();
+    in = new Scanner(System.in);
+    System.out.println("Please enter your first and last name: ");
+    String name = in.nextLine();
     return name;
   }
 
@@ -66,6 +65,22 @@ public class EmployeeInfo {
     return hasSpace;
   }
 
+  private void setDeptId(){
+    getId();
+  }
+  private String getId(){
+    in = new Scanner(System.in);
+    System.out.println("Please enter your id: ");
+    String id = in.nextLine();
+    return id;
+  }
+
+  private boolean validId(String id){
+    return true;
+  }
+
+
+
 
   public String getCode() {
     return code;
@@ -73,5 +88,9 @@ public class EmployeeInfo {
 
   public String getName() {
     return name.toString();
+  }
+
+  public String getDeptId(){
+    return deptId;
   }
 }

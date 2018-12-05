@@ -13,27 +13,27 @@ public class Product implements Item, Comparable<Product> {
   /**
    * serialNumber for product.
    */
-  int serialNumber;
+  private int serialNumber;
 
   /**
    * name of manufacturer.
    */
-  String manufacturer;
+  private String manufacturer;
 
   /**
    * date that the product is manufactured on.
    */
-  Date manufacturedOn;
+  private Date manufacturedOn;
 
   /**
    * name of product.
    */
-  String name;
+  private String name;
 
   /**
    * used to track current number in the production line, also used to set the serialNumber.
    */
-  static int currentProductionNumber = 1;
+  private static int currentProductionNumber = 1;
 
   /**
    * Constructor will create object of type Product, will assign serialNumber to
@@ -45,8 +45,12 @@ public class Product implements Item, Comparable<Product> {
     this.name = name;
     manufacturer = Item.manufacturer;
     serialNumber = currentProductionNumber;
-    currentProductionNumber++;
+    incCurrentProductionNumber();
     manufacturedOn = new Date();
+  }
+
+  private static void incCurrentProductionNumber() {
+    currentProductionNumber++;
   }
 
   /**
