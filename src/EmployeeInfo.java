@@ -8,12 +8,18 @@ import java.util.Scanner;
  */
 public class EmployeeInfo {
 
-  StringBuilder name;
-  String code;
+  private StringBuilder name;
+  private String code;
 
+  private String deptId;
+  private Scanner in;
+  
+  
+  
+  
+  
   public EmployeeInfo() {
     setName();
-    System.out.println(code);
   }
 
   private void setName() {
@@ -61,10 +67,11 @@ public class EmployeeInfo {
   }
 
 
-  public static void main(String[] args) {
-    EmployeeInfo emplOne = new EmployeeInfo();
-
+  public String getCode() {
+    return code;
   }
 
-
+  public String getName() {
+    return name.toString();
+  }
 }
